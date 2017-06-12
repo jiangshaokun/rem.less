@@ -1,0 +1,94 @@
+/*!
+ * rem.less v1.0
+ * (c) 2017 https://github.com/jiangshaokun/rem.less
+ * Released under the MIT License.
+ */
+
+/**
+ * 根据设计稿宽度设置根元素 font-size，使用 rem 单位
+ * @param {Number} @designWidth 设计稿宽度
+ */
+.UseRem(@designWidth) {
+
+  @media screen and (min-width: (@designWidth * .4px)) {
+    html {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .45px)) {
+    html {
+      font-size: 45px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .5px)) {
+    html {
+      font-size: 50px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .55px)) {
+    html {
+      font-size: 55px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .6px)) {
+    html {
+      font-size: 60px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .65px)) {
+    html {
+      font-size: 65px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .7px)) {
+    html {
+      font-size: 70px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .75px)) {
+    html {
+      font-size: 75px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .8px)) {
+    html {
+      font-size: 80px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .85px)) {
+    html {
+      font-size: 85px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .9px)) {
+    html {
+      font-size: 90px;
+    }
+  }
+
+  @media screen and (min-width: (@designWidth * .95px)) {
+    html {
+      font-size: 95px;
+    }
+  }
+
+  html {
+    font-size: (10000vw/@designWidth); // 如果支持 vw 则使用 vw
+  }
+
+  @media screen and (min-width: (@designWidth * 1px)) {
+    html {
+      font-size: 100px;
+    }
+  }
+}

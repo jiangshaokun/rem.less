@@ -5,8 +5,8 @@
  */
 
 /**
- * 根据设计稿宽度设置根元素 font-size，使用 rem 单位
- * @param {Number} @designWidth 设计稿宽度
+ * Set root font-size according to design's width.
+ * @param {Number} @designWidth Design' width
  */
 .UseRem(@designWidth) {
 
@@ -83,7 +83,7 @@
   }
 
   html {
-    font-size: (10000vw/@designWidth); // 如果支持 vw 则使用 vw
+    font-size: (10000vw/@designWidth); // use vw if supported
   }
 
   @media screen and (min-width: (@designWidth * 1px)) {
